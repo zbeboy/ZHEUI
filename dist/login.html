@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Twitter -->
+    <meta name="twitter:site" content="@themepixels">
+    <meta name="twitter:creator" content="@themepixels">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bracket">
+    <meta name="twitter:description" content="Premium Quality and Responsive UI for Dashboard.">
+    <meta name="twitter:image" content="http://themepixels.me/bracket/img/bracket-social.png">
+
+    <!-- Facebook -->
+    <meta property="og:url" content="http://themepixels.me/bracket">
+    <meta property="og:title" content="Bracket">
+    <meta property="og:description" content="Premium Quality and Responsive UI for Dashboard.">
+
+    <meta property="og:image" content="http://themepixels.me/bracket/img/bracket-social.png">
+    <meta property="og:image:secure_url" content="http://themepixels.me/bracket/img/bracket-social.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="600">
+
+    <!-- Meta -->
+    <meta name="description" content="Premium Quality and Responsive UI for Dashboard.">
+    <meta name="author" content="ThemePixels">
+
+    <title>登录-ISY</title>
+
+    <!-- vendor css -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/Ionicons/css/ionicons.css" rel="stylesheet">
+
+    <!-- Bracket CSS -->
+    <link rel="stylesheet" href="css/bracket/bracket.css">
+  </head>
+
+  <body>
+
+    <div class="d-flex align-items-center justify-content-center bg-br-primary ht-100v">
+
+      <div class="login-wrapper wd-300 wd-xs-350 pd-25 pd-xs-40 bg-white rounded shadow-base">
+        <div class="signin-logo tx-center tx-28 tx-bold tx-inverse"><span class="tx-normal">[</span> 登录 <span class="tx-normal">]</span></div>
+        <div class="tx-center mg-b-60">登录后会有更多功能哦(*^＠^*)</div>
+
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="账号/邮箱/手机">
+        </div><!-- form-group -->
+        <div class="form-group">
+          <input type="password" class="form-control" placeholder="密码">
+		  <a href="forget_password.html" class="tx-info tx-12 d-block mg-t-10">忘记密码？</a>
+        </div><!-- form-group -->
+        <button type="button" class="btn btn-info btn-block" id="login">登 录</button>
+
+        <div class="mg-t-60 tx-center">还没有账号吗？ <a href="" data-toggle="modal" data-target="#modalRegister" class="tx-info">注 册</a>  
+		<a href="" class="tx-info pull-right" data-toggle="modal" data-target="#modalQuestion">问题反馈</a></div>
+      </div><!-- login-wrapper -->
+    </div><!-- d-flex -->
+	
+	<!-- 注册类型 -->
+    <div id="modalRegister" class="modal fade">
+        <div class="modal-dialog modal-sm" role="document">
+           <div class="modal-content bd-0 tx-14">
+              <div class="modal-header pd-x-50">
+                <h6 class="tx-14 mg-b-0 tx-uppercase tx-inverse tx-bold">您想注册：</h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">&times;</span>
+                 </button>
+              </div>
+            <div class="modal-body pd-20">
+				<p class="mg-b-5">根据您目前的实际需要，选择您想注册的类型。</p>
+				<button type="button" class="btn btn-outline-primary btn-block mg-b-5" id="student">学生</button>
+				<button type="button" class="btn btn-outline-primary btn-block mg-b-5" id="staff">教职工</button>
+            </div>
+         </div>
+        </div><!-- modal-dialog -->
+    </div><!-- modal -->
+	
+	 <!-- 问题反馈 -->
+	  <div id="modalQuestion" class="modal fade">
+		<div class="modal-dialog modal-dialog-vertical-center" role="document">
+		  <div class="modal-content bd-0 tx-14">
+			<div class="modal-header pd-y-20 pd-x-25">
+			  <h6 class="tx-14 mg-b-0 tx-uppercase tx-inverse tx-bold">问题反馈</h6>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body pd-30">
+			  <div class="form-group">
+                 <input class="form-control" type="text" name="name" placeholder="您的姓名">
+              </div>
+			  <div class="form-group">
+                 <input class="form-control" type="email" name="email" placeholder="您的邮箱">
+              </div>
+			  <div class="form-group">
+                 <input class="form-control" type="text" name="simple" placeholder="简单描述">
+              </div>
+			  <div class="form-group">
+                 <textarea rows="3" class="form-control" name="details" placeholder="详细描述"></textarea>
+              </div>
+			  <div class="form-group tx-12">请您耐心等待，我们稍后会及时联系您，若处理超时，您还可以加入QQ群:159318834，寻求帮助。</div>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-primary tx-11 tx-uppercase pd-y-12 pd-x-25 tx-mont tx-medium">提交</button>
+			  <button type="button" class="btn btn-secondary tx-11 tx-uppercase pd-y-12 pd-x-25 tx-mont tx-medium" data-dismiss="modal">关闭</button>
+			</div>
+		  </div>
+		</div><!-- modal-dialog -->
+	  </div><!-- modal -->
+
+    <script src="js/jquery/jquery.js"></script>
+    <script src="js/popper.js/popper.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+	<script src="js/login/login.js"></script>
+
+  </body>
+</html>
